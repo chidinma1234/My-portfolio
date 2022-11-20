@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Oxanium', sans-serif;
+    font-size: 1rem;
+    background-color: #0d0d2b;
+    color: aliceblue;
+    transition: all 0.5s ease;
+}
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+img {
+    max-width: 100%;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3em 0.6em;
+    position: sticky;
+    top: 0;
+    transition: all 0.5s ease;
+}
+.logo {
+    width: 11%;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 2.5em;
+}
+.hire {
+    font-family: inherit;
+    background-color: #3671e9;
+    color: aliceblue;
+    margin-left: 0.6em;
+    padding: 0.5em 1em;
+    border-radius: 15px;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+/* home section */
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5em 1em;
+    padding: 0.5em;
+}
+#home,
+.container,
+footer {
+    animation-duration: 2s;
+
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+
+        width: 100%;
+    }
+}
+
+.home_img {
+    width: 40%;
+    /* border-radius: 50%; */
+}
+.chi_img {
+    border-radius: 50%;
+}
+.home_content {
+    /* display: inline-block; */
+    margin: 0 5em;
+}
+.typed {
+    overflow: hidden;
+    /* white-space: nowrap; */
+    width: 0;
+    animation: typing;
+    animation-duration: 2s;
+    animation-timing-function: steps(30, end);
+    animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+.home_content h1 {
+    text-transform: uppercase;
+    margin: 0.3em 0 1em;
+    padding: 0.5em 0;
+}
+.home_content p {
+    padding: 0.5em 0;
+    margin: 0 0 1em;
+    text-align: start;
+}
+/* contact section */
+footer {
+    background-color: aliceblue;
+    color: black;
+}
+.footer_img {
+    width: 15%;
+}
+.footer_head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5em;
+}
+footer h3 {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    margin: 1em 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+footer ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+/* About me page */
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3em 0.5em;
+    padding: 1em;
+}
+.container h1 {
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+.container p {
+    margin: 0.5em;
+}
+.container ul {
+    list-style: none;
+    display: flex;
+}
+.container ul li {
+    margin: 0.5em;
+}
+.about_content {
+    margin: 0 1em 0 0;
+}
+
+.cv {
+    background-color: #3671e9;
+    color: aliceblue;
+    font-family: inherit;
+    font-size: inherit;
+    margin: 1em 0;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+}
+
+/* .container::before {
+    /* content: '';
+    position: absolute;
+    top: 0;
+    right: 0; */
+/* background: url('images/chidinma.JPG') no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+} */
