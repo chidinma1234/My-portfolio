@@ -64,9 +64,10 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5em 1em;
+    margin: 6em 1em;
     padding: 0.5em;
 }
+/* animation to slide in */
 #home,
 .container,
 footer {
@@ -88,6 +89,7 @@ footer {
         width: 100%;
     }
 }
+/* end of animation */
 
 .home_img {
     width: 40%;
@@ -100,6 +102,7 @@ footer {
     /* display: inline-block; */
     margin: 0 5em;
 }
+/* animation for the text to type */
 .typed {
     overflow: hidden;
     /* white-space: nowrap; */
@@ -118,6 +121,7 @@ footer {
         width: 100%;
     }
 }
+/* end of animation */
 .home_content h1 {
     text-transform: uppercase;
     margin: 0.3em 0 1em;
@@ -128,6 +132,8 @@ footer {
     margin: 0 0 1em;
     text-align: start;
 }
+/* end of home section */
+
 /* contact section */
 footer {
     background-color: aliceblue;
@@ -136,12 +142,12 @@ footer {
 .footer_img {
     width: 15%;
 }
-.footer_head {
+/* .footer_head {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 1.5em;
-}
+} */
 footer h3 {
     /* display: flex;
     align-items: center;
@@ -152,9 +158,12 @@ footer h3 {
 }
 footer ul {
     list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer ul li {
+    margin: 0 0.5em;
 }
 /* About me page */
 .container {
@@ -167,7 +176,7 @@ footer ul {
 }
 .container h1 {
     text-transform: uppercase;
-    margin: 0.5em 0;
+    margin: 0.5em 0.2em;
 }
 .container p {
     margin: 0.5em;
@@ -177,7 +186,7 @@ footer ul {
     display: flex;
 }
 .container ul li {
-    margin: 0.5em;
+    margin: 1.5em 0.7em;
 }
 .about_content {
     margin: 0 1em 0 0;
@@ -192,6 +201,7 @@ footer ul {
     padding: 0.5em 1em;
     border-radius: 20px;
 }
+/* end of about me page */
 
 /* .container::before {
     /* content: '';
